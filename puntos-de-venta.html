@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Campobasso</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- aos jquery scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="fonts-campobasso/style-campobasso-fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="floating-wpp.min.js"></script>
+    <link rel="stylesheet" href="floating-wpp.min.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <!-- body -->
+  <body class="main-layout">
+    <!-- loader  -->
+    <div class="loader-wrapper">
+      <span class="loader"></span>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+      <ul class="navbar-desktop">
+        <li class="navbar-item">
+          <a href="index.html">HOME</a>
+          <span class="punto">•</span>
+        </li>
+        <li class="navbar-item">
+          <a href="nuestros-quesos.html">NUESTROS QUESOS</a>
+          <span class="punto">•</span>
+        </li>
+        <li class="navbar-item">
+          <a href="rallados-x-mayor.html">RALLADOS X MAYOR</a>
+          <span class="punto">•</span>
+        </li>
+        <div class="logo-container">
+          <a href="index.html"
+            ><img
+              class="navbar-desktop-logo"
+              src="images/logo-nav.svg"
+              alt="logo-desk"
+            />
+          </a>
+        </div>
+        <li class="navbar-item">
+          <span class="punto">•</span>
+          <a href="nuestra-empresa.html">NUESTRA EMPRESA</a>
+        </li>
+        <li class="navbar-item">
+          <span class="punto">•</span>
+          <a href="puntos-de-venta.html">PUNTOS DE VENTA</a>
+        </li>
+        <li class="navbar-item">
+          <span class="punto">•</span>
+          <a href="contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+      <ul class="navbar-mobile">
+        <li class="navbar-item">
+          <img
+            class="navbar-mobile-logo"
+            src="images/logo-nav.svg"
+            alt="logo-mob"
+          />
+        </li>
+        <li class="navbar-item container-menu-icon">
+          <button
+            class="toggle-button"
+            onclick="javascript:return ShowDivonClick()"
+          >
+            <i class="fa-solid fa-bars menu-icon"></i>
+          </button>
+        </li>
+      </ul>
+    </header>
+    <section id="menu-opened" style="height: 0; min-height: 0">
+      <ul class="navbar-mobile-list">
+        <li class="navbar-item">
+          <span class="punto">•</span>
+          <a href="index.html">HOME</a>
+        </li>
+        <li class="navbar-item">
+          <span class="punto">•</span>
+          <a href="nuestros-quesos.html">NUESTROS QUESOS</a>
+        </li>
+        <li class="navbar-item">
+          <span class="punto">•</span>
+          <a href="rallados-x-mayor.html">QUESOS RALLADOS</a>
+        </li>
+        <li class="navbar-item">
+          <span class="punto">•</span>
+          <a href="nuestra-empresa.html">NOSOTROS</a>
+        </li>
+        <li class="navbar-item">
+          <span class="punto">•</span>
+          <a href="puntos-de-venta.html">PUNTOS DE VENTA</a>
+        </li>
+        <li class="navbar-item">
+          <span class="punto">•</span>
+          <a href="contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+    </section>
+    <!-- end header -->
+    <!-- start wavy section -->
+    <div class="wavy">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M-16.64,-13.30 C18.90,38.00 501.97,37.02 529.06,-27.11 L513.26,-0.47 L255.36,-86.33 Z"
+          style="stroke: none; fill: #000"
+        ></path>
+      </svg>
+    </div>
+    <!-- end of wavy svg -->
+
+    <!-- start slider section -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img
+            class="d-flex w-100 primera-vista"
+            src="images/puntos-de-venta/1-Slide-PuntosDeVenta.jpg"
+            alt="First slide"
+          />
+          <div class="banner_main">
+            <div class="container">
+              <div
+                data-aos="fade-down"
+                class="bluid nosotros-slider carousel-caption d-md-block"
+              >
+                <p>PUNTOS DE VENTA</p>
+                <h1>Encontrá nuestros<br />quesos en toda la región.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img
+            class="d-flex w-100 segunta-vista"
+            src="images/puntos-de-venta/2-Slide-PuntosDeVenta.jpg"
+            alt="Second slide"
+          />
+          <div class="banner_main">
+            <div class="container">
+              <div
+                data-aos="fade-down"
+                class="bluid nosotros-slider carousel-caption d-md-block"
+              >
+                <p>PUNTOS DE VENTA</p>
+                <h1>Encontra nuestros<br />quesos en toda la región.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img
+            class="d-flex w-100 segunta-vista"
+            src="images/puntos-de-venta/ImagenPuntosDeVenta.jpg"
+            alt="Second slide"
+          />
+          <div class="banner_main">
+            <div class="container">
+              <div
+                data-aos="fade-down"
+                class="bluid nosotros-slider carousel-caption d-md-block"
+              >
+                <p>PUNTOS DE VENTA</p>
+                <h1>Encontra nuestros<br />quesos en toda la región.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- end slider section -->
+    <!-- section-a -->
+    <div class="section-a">
+      <div class="container-nosotros-portfolio">
+        <div class="container-nosotros-rallado-titulo">
+          <img
+            data-aos="fade-up"
+            class="quesos-rallado-img"
+            src="images/puntos-de-venta/ilustracion-PuntosDeVenta.svg"
+            alt="vaga-img"
+          />
+          <div class="container-nuestro-canal">
+            <h1 data-aos="fade-up" class="nuestro-canal">
+              Donde comprar CAMPOBASSO
+            </h1>
+          </div>
+        </div>
+        <div class="container-nosotros">
+          <div class="container-puntos-info">
+            <p data-aos="fade-up" class="mobile-info">
+              Te acercamos los distintos canales de comercialización: Nuestro
+              Almacén de quesos, <br />
+              supermercados, tiendas online, locales de productos gourmet, etc.
+            </p>
+            <div class="container-puntos-img">
+              <img
+                data-aos="fade-up"
+                src="images/Screenshot 2024-01-24 at 16.12.13.png"
+                alt="local"
+              />
+            </div>
+            <div data-aos="fade-up" class="punto-de-venta-directa">
+              <h1>ALMACÉN DE QUESOS Y PRODUCTOS GOURMET</h1>
+              <p class="venta-fabrica-p">
+                (VENTA DE QUESOS DIRECTO DE FÁBRICA)
+              </p>
+              <p>Av. Belgrano 1917, (B1611DUD)</p>
+              <p>Don Torcuato, Provincia de Buenos Aires</p>
+              <p>Tel. 011 3129-9784</p>
+
+              <div class="descargar-button-black">
+                <a href="">DESCARGAR LISTA DE PRECIOS ACÁ</a>
+              </div>
+            </div>
+            <div class="container-puntos-img">
+              <img
+                data-aos="fade-up"
+                src="images/puntos-de-venta/puntoscut.png"
+                alt="local"
+              />
+            </div>
+            <h1 class="puntos-de-venta-title">PUNTOS DE VENTA</h1>
+            <div data-aos="fade-up" class="punto-de-venta">
+              <h1>BUENOS AIRES (CABA)</h1>
+              <p>BIOMARKET - AV. PUEYRREDON 2088 (RECOLETA)</p>
+              <p>MATCHA LIFE - RODRIGUEZ PEÑA 1336 (RECOLETA)</p>
+              <p>MERCADO PUNTO VERDE - DORREGO 1429 (PALERMO)</p>
+              <p>EL GALPON - FEDERICO LACROZE 4181 (CHACARITA)</p>
+              <p>FLORA ALMACEN - DOREGO 2082 (PALERMO)</p>
+              <p>FRESCO MERCADO - JURAMENTO 2540 (BELGRANO)</p>
+              <p>LA TIENDA NATURAL - MIGUELETES 1862 (BELGRANO)</p>
+              <p>MERCADITO NATURAL MONROE 1991 (BELGRANO)</p>
+            </div>
+            <div data-aos="fade-up" class="punto-de-venta">
+              <h1>BUENOS AIRES (ZONA SUR)</h1>
+              <p>TINA & CO - MENDOZA 1678 (BARRIO CHINO)</p>
+              <p>CASA CHINA DIETETICA - ARRIBEÑOS 2173 (BARRIO CHINO)</p>
+              <p>BEER COFFEE - FLORIDA 737 (GALERIAS PACIFICO)</p>
+              <p>LA AGROECOLOGICA - MANUELA PEDRAZA 2042 (NUÑEZ)</p>
+              <p>DAME TU MANO - QUESADA 5094 (VILLA URQUIZA)</p>
+              <p>ZOJA MARKET - AV. SANTA FE 4872 (RECOLETA)</p>
+              <p>FRESCO MERCADO - ARAOZ 2485 (PALERMO)</p>
+            </div>
+            <div data-aos="fade-up" class="punto-de-venta">
+              <h1>BUENOS AIRES (ZONA NORTE)</h1>
+              <p>SHAFE ALMACEN - DRAGONES 2000 (BELGRANO)</p>
+              <p>IBU ALMACEN - SANCHEZ DE BUSTAMENTE 2007 (RECOLETA)</p>
+              <p>CHICANA INTI - DONADO 1995 (VILLA URQUIZA)</p>
+              <p>INTENZZO CHELSEA GOURMENT - AVALOS 1989 (VILLA URQUIZA)</p>
+              <p>LAPIDA ALMACEN - LAPRIDA 1917 (RECOLETA)</p>
+              <p>CHIRIMOYA TIENDA - LUGONES 2267 (DEVOTO)</p>
+            </div>
+            <div data-aos="fade-up" class="punto-de-venta">
+              <h1>PROVINCIA DE BUENOS AIRES</h1>
+              <p>NARDA COMEDOR DIARIO - NICARAGUA 6055 (PALERMO)</p>
+              <p>NATURAL WAY - MIGUELETES 1910 (BARRIO CHINO)</p>
+              <p>DEL PATRELLO - CLAY 2866 (LAS CAÑITAS)</p>
+              <p>ALMACEN LURO - QUINTANA 48 (RECOLETA)</p>
+              <p>BLOOM MARKET - GORRITI 5578 (PALERMO)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section-a -->
+    <div class="container-iconos-varios">
+      <div data-aos="fade-up" class="container-icon-card">
+        <img src="images/iconos-varios/Envios.svg" alt="" />
+        <div class="container-card-text footer-divider">
+          <h1 class="medios">ENVÍOS</h1>
+          <p class="medios-p">A TODO EL PAÍS</p>
+        </div>
+      </div>
+
+      <div class="container-icon-card">
+        <img data-aos="fade-up" src="images/iconos-varios/Retiro.svg" alt="" />
+        <div class="container-card-text footer-divider">
+          <h1 data-aos="fade-up" class="medios">RETIRO</h1>
+          <p data-aos="fade-up" class="medios-p">EN EL ALMACÉN</p>
+        </div>
+      </div>
+
+      <div class="container-icon-card card-xl">
+        <img data-aos="fade-up" src="images/iconos-varios//Paga.svg" alt="" />
+        <div class="container-card-text">
+          <h1 data-aos="fade-up" class="medios medios-paga">PAGÁ <br /></h1>
+          <p data-aos="fade-up" class="medios-p">
+            CON CUALQUIER <br />MEDIO DE PAGO
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- section Quiero comercializar -->
+    <div class="container-quiero-contacto">
+      <div id="uniteCampobassoContainer1" class="container-text-input">
+        <div id="uniteCampobassoContainer2" class="container-quiero-text">
+          <div class="container-quiero-img">
+            <img
+              data-aos="fade-up"
+              class="bolsa-img"
+              src="images/puntos-de-venta/ilustracion-BolsaBanner.svg"
+              alt=""
+            />
+          </div>
+          <p data-aos="fade-up">Uníte y se parte de la revolución del sabor</p>
+          <h1 data-aos="fade-up">Quiero vender</h1>
+          <h1 data-aos="fade-up">CAMPOBASSO</h1>
+        </div>
+
+        <form id="formNewsletter" class="main_form">
+          <div data-aos="fade-up" class="container-quiero-input">
+            <input class="input-ingresa-aca" type="email" name="contact2" required placeholder="INGRESÁ TU MAIL ACÁ" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+            <a><button class="button-contact" type="submit">CONTACTARME</button></a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- section-c -->
+    <div class="section-c-nuestros">
+      <div class="container-title">
+        <h1 data-aos="fade-right" class="creemos-simplicidad">
+          Creemos en la autenticidad <br />
+          y la simplicidad.
+        </h1>
+      </div>
+      <div class="container-sellos">
+        <img
+          data-aos="fade-up"
+          class="sellos-nosotros"
+          src="images/Home/icon-sin-conservantes.svg"
+          alt="cons"
+        />
+        <img
+          data-aos="fade-up"
+          class="sellos-nosotros"
+          src="images/Home/icon-Natural.svg"
+          alt="natu"
+        />
+        <img
+          data-aos="fade-up"
+          class="sellos-nosotros"
+          src="images/Home/icon-100Queso.svg"
+          alt="queso"
+        />
+        <img
+          data-aos="fade-up"
+          class="sellos-nosotros"
+          src="images/Home/icon-SinTacc.svg"
+          alt="tacc"
+        />
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="container mobile-nopadding">
+          <div class="row justify-content-between">
+            <div class="col-md-3">
+              <a class="logo_footer" href="home.html"
+                ><img src="images/Home/logo-footer.svg" alt="#"
+              /></a>
+              <div class="container-footer-icons">
+                <img
+                  class="footer-icon"
+                  src="images/Home/icon-footer-SinConservantes.svg"
+                  alt="sin"
+                />
+                <img
+                  class="footer-icon"
+                  src="images/Home/icon-footer-Natural.svg"
+                  alt="nat"
+                />
+                <img
+                  class="footer-icon"
+                  src="images/Home/icon-footer-100Queso.svg"
+                  alt="que"
+                />
+                <img
+                  class="footer-icon"
+                  src="images/Home/Icon-footer-SinTacc.svg"
+                  alt="tac"
+                />
+              </div>
+            </div>
+            <div class="links-container d-flex justify-content-between">
+              <div class="col-md-3 col-sm-6">
+                <div class="Informa helpful">
+                  <h3>CAMPOBASSO</h3>
+                  <ul>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="nuestros.html">HISTORIA</a></li>
+                    <li><a href="quesos_rallados.html">UNITE!</a></li>
+                    <li><a href="contacto.html">DATA FISCAL</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="">
+                <div class="Informa conta" style="padding-left: 15px">
+                  <h3>SEGUINOS</h3>
+                  <ul class="social-ul d-flex">
+                    <li>
+                      <a href="Javascript:void(0)"
+                        ><i class="fa fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="Javascript:void(0)"
+                        ><i class="fa fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="Javascript:void(0)"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="Javascript:void(0)"
+                        ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text_align_left">
+          <div class="container">
+            <div class="row d_flex">
+              <div class="adress-footer-container">
+                <p>
+                  Av. Belgrano 1917, Don Torcuato, Buenos Aires - Tel. 11
+                  4748-0608
+                </p>
+                <p>Copyright ©2024 Campobasso Quesos. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Whatsapp floating -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <a
+      href="https://api.whatsapp.com/send?phone=51900000000&text"
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <!-- Javascript files-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://kit.fontawesome.com/e5ffc6fe18.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="form.js"></script>
+
+    <script type="text/javascript">
+      function ShowDivonClick() {
+        const menuOpened = document.getElementById("menu-opened");
+        if (menuOpened.style.height === "325.5px") {
+          menuOpened.style.minHeight = "0px";
+          menuOpened.style.height = "0px";
+        } else {
+          menuOpened.style.minHeight = "325.5px";
+          menuOpened.style.height = "325.5px";
+        }
+      }
+    </script>
+    <script src="js/spinner.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

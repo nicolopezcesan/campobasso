@@ -1,0 +1,852 @@
+/* Estilos generales para resoluciones mayores o iguales a 1321px */
+@media (min-width: 1659px) {
+  .container-cuidamos {
+    max-height: 800px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .portfolio_quesos {
+    padding-top: 50px;
+  }
+  #parme {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1660px) {
+  .container-cuidamos {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 899px) {
+  .container-cuidamos img {
+    max-height: 400px;
+  }
+
+  .container-cuidamos-text {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .campobasso-tambito {
+    left: 0px;
+  }
+}
+
+@media (min-width: 1321px) {
+  .logo-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1351px) and (max-width: 1472px) {
+  .container-provoxl-textmini {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .portfolio_quesos {
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    padding-top: 150px;
+  }
+  .container-provo-mix {
+    flex-direction: column;
+  }
+
+  .container-provo-xl {
+    width: 100%;
+  }
+  .container-mix-fondue {
+    width: 100%;
+  }
+  .carousel-cap-provo {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-item-leche-background img {
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1500px) {
+  .fondue {
+    max-height: 800px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .section-d-nosotros .rallado {
+    padding: 0px;
+  }
+  .container-nosotros-vaquitas {
+    flex-direction: column;
+    max-height: 800px;
+  }
+  .footer-divider {
+    padding-right: 20px;
+    border-right: 3px solid black;
+    height: 70px;
+  }
+  .container-iconos-varios {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  #provo-savo {
+    flex-direction: column;
+  }
+  .container-description-nuestros {
+    width: 100%;
+  }
+
+  .container-description-nuestros-carousel {
+    width: 100%;
+  }
+}
+
+/* Estilos para resoluciones entre 1200px y 1320px */
+@media (min-width: 1200px) and (max-width: 1320px) {
+  ul.email li {
+    padding: 0px 31px;
+  }
+  #top_section {
+    height: 700px;
+  }
+  .banner_main .bluid h1 {
+    color: #fff;
+    font-size: 90px;
+    line-height: 80px;
+    padding-bottom: 25px;
+  }
+  .logo-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 1179px) {
+  .container-text-gramaje {
+    padding: 50px;
+  }
+  .container-gramaje {
+    gap: 50px;
+  }
+  .container-cuidamos {
+    flex-direction: column;
+    height: auto;
+  }
+  .container-cuidamos img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .container-cuidamos-text {
+    max-height: 500px;
+  }
+  .container-cuidamos-text h3 {
+    color: #d9bc81;
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-lechero-sellos {
+    padding: 100px 0px 0px 0px;
+  }
+
+  .container-last-info {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .container-info {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .container-title {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .nosotros-image {
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .section-c-nosotros {
+    padding: 30px;
+  }
+  .section-d-nosotros {
+    display: flex;
+    padding: 0px;
+  }
+  .container-cuidamos {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .rallado-info h1 {
+    font-size: 40px;
+  }
+  .rallado-info {
+    padding-left: 30px;
+  }
+  .container-provoleta-probala img {
+    padding: 0px;
+  }
+  .container-mini-section {
+    width: 100%;
+  }
+  .section-campobasso-contacto h1 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .container-nuestro-canal h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .section-c {
+    flex-direction: column;
+  }
+
+  .section-d {
+    flex-direction: column;
+  }
+
+  .rallado-info p {
+    display: none;
+  }
+  .bakers {
+    min-height: 400px;
+  }
+  .section-c-nuestros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-sellos img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container-iconos-varios {
+    gap: 100px;
+  }
+
+  .footer-divider {
+    border: none;
+  }
+  .container-card-text h1 {
+    font-size: 40px;
+    max-width: 140px;
+  }
+
+  .container-icon-card img {
+    max-width: 120px;
+    min-width: 90px;
+  }
+
+  .card-xl {
+    padding-right: 0px !important;
+  }
+}
+
+/* Estilos para resoluciones entre 992px y 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner_main .bluid h1 {
+    color: #fff;
+    font-size: 90px;
+    line-height: 110px;
+    padding-bottom: 25px;
+  }
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 0px 21px;
+  }
+  ul.email li {
+    padding: 0px 19px;
+  }
+  #top_section {
+    padding-top: 164px;
+    height: 700px;
+  }
+  #we1 a.carousel-control-prev {
+    left: 42%;
+  }
+  #clientsl a.carousel-control-prev {
+    left: 33%;
+  }
+  .logo-toggle {
+    display: none;
+  }
+}
+
+/* Estilos para resoluciones entre 768px y 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 0px 7px;
+  }
+  ul.email li {
+    padding: 0px 8px;
+  }
+  #top_section {
+    padding-top: 150px;
+    height: 600px;
+  }
+  .banner_main .bluid h1 {
+    font-size: 62px;
+    line-height: 71px;
+  }
+  .titlepage h2 {
+    font-size: 37px;
+    line-height: 41px;
+  }
+  #we1 a.carousel-control-prev {
+    left: 38%;
+  }
+  .we_box {
+    padding: 15px;
+  }
+  .clientsl_text {
+    padding: 25px;
+  }
+  #clientsl a.carousel-control-next,
+  #clientsl a.carousel-control-prev {
+    top: 98%;
+  }
+  #clientsl a.carousel-control-prev {
+    left: 34%;
+  }
+  #clientsl a.carousel-control-next {
+    right: 26%;
+  }
+  .Informa li {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .logo-toggle {
+    display: none;
+  }
+}
+
+/* Estilos para resoluciones entre 576px y 767px */
+@media (max-width: 1024px) {
+  #top_section {
+    padding-top: 150px;
+    height: 700px;
+  }
+  .logo {
+    text-align: left;
+    display: block;
+  }
+  .banner_main .bluid h1 {
+    font-size: 50px;
+  }
+  #we1 a.carousel-control-next,
+  #we1 a.carousel-control-prev {
+    top: 103%;
+  }
+  #we1 a.carousel-control-prev {
+    left: 37%;
+  }
+  #we1 a.carousel-control-next {
+    right: 37%;
+  }
+  .main_form .send_btn {
+    margin-bottom: 40px;
+  }
+  .newslatter_form {
+    margin-top: 50px;
+  }
+  .navigation.navbar {
+    float: right;
+    display: inherit !important;
+    padding: 0;
+    width: 100%;
+  }
+  .navigation .navbar-collapse {
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background-color: black;
+  }
+
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 0;
+    color: #fff;
+    text-align: left;
+  }
+  .navigation.navbar-dark .navbar-toggler {
+    border: inherit;
+    float: right;
+    padding: 0;
+    outline: inherit;
+    margin-top: 0px;
+  }
+  .navigation.navbar-dark .navbar-toggler-icon {
+    background: url(../images/menu_btn.png);
+    background-repeat: no-repeat;
+    width: 48px;
+    float: right;
+  }
+  .container-image-description {
+    display: block;
+    width: 100%;
+  }
+  .container-image-description img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+  .container-provo-mix {
+    padding: 0px;
+  }
+  .container-almacen {
+    padding: 0px;
+  }
+  .container-almacen img {
+    min-height: 286px;
+  }
+  .container-iconos-varios {
+    gap: 0px;
+    margin-top: 50px;
+  }
+  .container-almacen-text h1 {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 800px) {
+  .section-a {
+    gap: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-nuestro-canal h1 {
+    font-size: 40px;
+  }
+  .container-nosotros-info {
+    padding: 0px;
+    gap: 20px;
+  }
+  .container-text-gramaje {
+    background-color: black;
+  }
+  .nuestro-canal {
+    width: 400px;
+  }
+  .contacta-asesor a {
+    padding: 0px;
+  }
+  .quesos-rallados-iconos {
+    padding-top: 450px;
+  }
+  .carousel-provoletas {
+    padding: 0px;
+  }
+  .carousel-cap-provo {
+    padding-bottom: 0px;
+  }
+  #icono {
+    margin-top: 150px;
+  }
+}
+
+/* Estilos para resoluciones menores a 770px */
+@media (max-width: 769px) {
+  .bluid {
+    padding-top: 50px;
+  }
+  .bluid .cotiza {
+    display: flex;
+  }
+
+  .bluid .navigation .navbar-collapse {
+    margin-top: 550px;
+  }
+  .container-cuidamos-text h3 {
+    font-size: 25px !important;
+  }
+  #icono {
+    padding-top: 100px !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .container-provoleta-text {
+    top: 10%;
+  }
+  .container-provoleta-text h3 {
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 3px 3px 5px black;
+  }
+  .container-almacen {
+    padding: 0px;
+    flex-direction: column;
+  }
+  .veni-button {
+    top: 140%;
+  }
+  .container-almacen-text {
+    width: 100%;
+  }
+  .container-almacen img {
+    width: 100%;
+  }
+  .container-provo-mix {
+    gap: 0px;
+  }
+  .quesos-rallados-iconos {
+    padding-top: 450px;
+  }
+  .section-c {
+    padding: 0px;
+  }
+  .nuestros-iconos {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 799px) {
+  .container-nosotros-bolsa-rallado {
+    margin-bottom: 200px;
+  }
+}
+
+/* Estilos para resoluciones menores a 575px */
+@media (max-width: 575px) {
+  .header {
+    padding: 37px 0px;
+  }
+  .d_none {
+    display: none !important;
+  }
+  .logo {
+    display: block;
+    float: left;
+  }
+  .bluid {
+    margin-top: 23px;
+  }
+  .banner_main .bluid h1 {
+    font-size: 50px;
+    line-height: 51px;
+  }
+  #top_section {
+    height: 678px;
+  }
+  .banner_main .bluid .read_more {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  #we1 a.carousel-control-next {
+    right: 26%;
+  }
+  #we1 a.carousel-control-prev {
+    left: 25%;
+  }
+  #we1 a.carousel-control-next,
+  #we1 a.carousel-control-prev {
+    top: 101%;
+  }
+  .titlepage h2 {
+    font-size: 24px;
+    line-height: 54px;
+  }
+  #ho_nf:hover .portfolio_text {
+    height: 135px;
+    padding: 29px 14px;
+  }
+  .portfolio_text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .main_form .send_btn {
+    margin-bottom: 40px;
+  }
+  #clientsl a.carousel-control-next,
+  #clientsl a.carousel-control-prev {
+    top: 100%;
+  }
+  #clientsl a.carousel-control-next {
+    right: 25%;
+  }
+  #clientsl a.carousel-control-prev {
+    left: 25%;
+  }
+  .clientsl_text i img {
+    float: inherit;
+  }
+  .clientsl_text h3 {
+    margin-top: 11px;
+  }
+  .newslatter_form {
+    display: inherit;
+    margin-top: 40px;
+  }
+  .subs_btn {
+    margin-left: 0;
+    max-width: 223px;
+    margin-top: 30px;
+  }
+  .copyright p {
+    text-align: center;
+  }
+  ul.social_icon {
+    float: inherit;
+    margin-top: 20px;
+  }
+  .navigation.navbar {
+    float: right;
+    display: inherit !important;
+    padding: 0;
+    width: 100%;
+    margin-top: -27px;
+  }
+  .navigation .navbar-collapse {
+    background: #2b2b2b;
+    padding: 20px;
+    margin-top: 444px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+  }
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 0;
+    color: #fff;
+    text-align: left;
+  }
+  .navigation.navbar-dark .navbar-toggler {
+    float: right;
+    border: inherit;
+    margin-top: 1px;
+    padding: 0;
+    outline: inherit;
+  }
+  .navigation.navbar-dark .navbar-toggler-icon {
+    background: url(../images/menu_btn.png);
+    background-repeat: no-repeat;
+    width: 48px;
+  }
+  .links-container {
+    flex-wrap: wrap;
+  }
+  .container-sellos {
+    display: none;
+  }
+  .container-text-and-button {
+    padding: 0px 10px 0px 10px;
+  }
+  .section-c-nosotros {
+    width: 100%;
+  }
+  .nosotros-image {
+    width: 100%;
+  }
+  .container-nosotros-info p {
+    display: none;
+  }
+  .container-nosotros-info .mobile-info {
+    display: flex;
+  }
+  .container-nosotros-vaquitas img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    padding-bottom: 200px;
+  }
+  .container-nosotros-bolsa-rallado img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .section-d-nosotros {
+    height: 100%;
+    margin-bottom: 600px;
+  }
+  .container-provoxl-textmini {
+    align-items: end;
+    gap: 0px !important;
+  }
+  .fondue img {
+    max-height: 270px;
+  }
+  .container-iconos-varios {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .icons-footer {
+    margin-top: -300px;
+  }
+  .icons-footer-xmayor {
+    margin-top: -200px;
+  }
+  .adress-footer-container {
+    flex-direction: column;
+    gap: 50px;
+    width: 80%;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1250px) {
+  .rallado-info {
+    width: 100%;
+  }
+
+  .container-text-queso {
+    width: 100%;
+  }
+
+  .bakers {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .container-empleados {
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .container-text-input {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .padding {
+    padding: 0px;
+  }
+
+  .bluid-provo {
+    padding-bottom: 10px;
+  }
+
+  .rallado-plateado {
+    padding-top: 0px;
+  }
+
+  .container-text-queso {
+    width: 100%;
+  }
+
+  .container-vaca-portfolio {
+    display: block;
+  }
+
+  .container-vaca-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .container-vaca-info h1 {
+    padding: 20px;
+  }
+
+  .vaca-img {
+    width: 100%;
+    max-width: 420px;
+    padding-bottom: 0px;
+  }
+  .rallado-info {
+    width: 100%;
+  }
+
+  .bakers {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .container-empleados {
+    width: 100%;
+  }
+  .carousel-item-lechero img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .container-text-gramaje {
+    padding: 20px;
+  }
+  .container-nosotros-bolsa-rallado {
+    flex-direction: column;
+  }
+  .container-nosotros-bolsa-rallado img {
+    width: 100%;
+    height: 500px;
+  }
+  .container-nuestro-canal {
+    padding-bottom: 20px;
+  }
+  .container-card-text {
+    max-width: 140px;
+  }
+  .ya-la-probaste a {
+    max-width: 200px !important;
+    text-align: center;
+    height: 80px;
+  }
+  .portfolio_quesos {
+    padding-top: 50px;
+  }
+  .descubri_button a {
+    font-size: 15px !important;
+    text-align: center;
+  }
+}
+
+@media (min-width: 550px) {
+  .container-positioned {
+    position: absolute;
+  }
+}
+
+@media (max-width: 549px) {
+  .container-positioned {
+    display: flex;
+    top: 100px;
+    justify-content: center;
+    margin-top: -150px;
+  }
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .cotiza_button {
+    padding-top: 5px;
+    padding-bottom: 18px;
+  }
+  .container-provoleta-probala img {
+    min-height: 369px;
+  }
+  .container-provoleta-text h1 {
+    font-size: 50px;
+  }
+  .cotiza_button a {
+    width: 300px;
+  }
+  .links-container {
+    padding-top: 30px;
+    gap: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .container-quiero-input {
+    flex-direction: column;
+  }
+  .button-contact {
+    padding: 6px 44px;
+  }
+}

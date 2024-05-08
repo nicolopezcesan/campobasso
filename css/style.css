@@ -1,0 +1,2176 @@
+/*--------------------------------------------------------------------- 
+File Name: style.css 
+---------------------------------------------------------------------*/
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(font-awesome.min.css);
+@import url(owl.carousel.min.css);
+
+/*--------------------------------------------------------------------- 
+basic 
+---------------------------------------------------------------------*/
+
+body {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.80857;
+  font-weight: normal;
+}
+
+a {
+  color: #1f1f1f;
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+  font-weight: normal;
+  position: relative;
+  padding: 0;
+  font-weight: normal;
+  line-height: normal;
+  color: #111111;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-family: "MONTSERRAT";
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #212121;
+  text-decoration: none !important;
+  opacity: 1;
+}
+
+button:focus {
+  outline: none;
+}
+
+ul,
+li,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+p {
+  margin: 0px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+  outline: none !important;
+}
+
+a,
+.btn {
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+:focus {
+  outline: 0;
+}
+
+.btn-custom {
+  margin-top: 20px;
+  background-color: transparent !important;
+  border: 2px solid #ddd;
+  padding: 12px 40px;
+  font-size: 16px;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767676;
+  margin: 0;
+  padding: 0;
+}
+
+.form-control:focus {
+  border-color: #ffffff !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.navbar-form input {
+  border: none !important;
+}
+
+.badge {
+  font-weight: 500;
+}
+
+blockquote {
+  margin: 20px 0 20px;
+  padding: 30px;
+}
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.full {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.titlepage {
+  padding-bottom: 60px;
+}
+
+.titlepage::before {
+  content: "";
+  position: absolute;
+  border: #fff solid 5px;
+  border-width: 5px;
+  width: 80px;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 55px;
+}
+
+.titlepage h2 {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 50px;
+  color: #323232;
+}
+
+.read_more {
+  display: inline-block;
+  background: #6dcff6;
+  color: #fff;
+  max-width: 215px;
+  height: 61px;
+  line-height: 61px;
+  width: 100%;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 500;
+  transition: ease-in all 0.5s;
+}
+
+.read_more:hover {
+  background: #0e0b01;
+  color: #fff;
+  transition: ease-in all 0.5s;
+}
+
+.img_responsive {
+  max-width: 100%;
+}
+
+.text_align_center {
+  text-align: center;
+  /* width: 300px; */
+}
+
+.text_align_left {
+  text-align: left;
+}
+
+.text_align_right {
+  text-align: right;
+}
+
+.d_flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+.navbar-desktop-logo {
+  height: 110px;
+}
+
+.navbar-mobile-logo {
+  height: 80px;
+}
+
+/*---------------------------- 
+loader  
+----------------------------*/
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------------- 
+header 
+---------------------------------------------------------------------*/
+
+header {
+  background-color: black;
+  height: 140px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-item a {
+  color: white;
+  font-size: 25px;
+}
+
+.navbar-item a:hover {
+  color: #d9bc81;
+}
+
+.navbar-item .logo-container {
+  display: flex;
+  height: 140px;
+}
+
+.container-background-leche {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.salpicadura {
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.campobasso-tambito {
+  top: 40px;
+  left: 30px;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+}
+
+.wavy {
+  display: flex;
+  overflow: hidden;
+  width: 26%;
+  position: absolute;
+  z-index: 10;
+  left: 36.5%;
+  top: 140px;
+}
+
+.punto {
+  color: #d9bc81;
+}
+
+#menu-opened {
+  overflow: hidden;
+}
+
+@media (min-width: 1049px) {
+  .navbar-mobile {
+    display: none;
+  }
+  #menu-opened {
+    display: none;
+  }
+}
+
+@media (min-width: 1291px) and (max-width: 1410px) {
+  .navbar-item a {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1290px) {
+  .navbar-item a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-mobile-logo {
+    width: 80%;
+  }
+  .navbar-item {
+    justify-content: unset;
+  }
+  .wavy {
+    top: 0px;
+  }
+}
+
+@media (max-width: 1049px) {
+  #menu-opened {
+    background-color: black;
+    justify-content: center;
+    transition: all 1s;
+  }
+  header ul {
+    gap: 0px;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .menu-icon {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .toggle-button {
+    border: none;
+    background-color: transparent;
+  }
+  .navbar-mobile-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*--------------------------------------------------------------------- 
+menu section
+---------------------------------------------------------------------*/
+
+.navigation.navbar {
+  padding: 0;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.navigation.navbar-dark .navbar-nav .active > .nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.di_no {
+  display: none;
+}
+
+ul.email {
+  padding-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+ul.email li {
+  padding: 0px 35px;
+}
+
+ul.email li:nth-child(2) {
+  padding-right: 0;
+}
+
+ul.email li a {
+  font-size: 17px;
+  color: #fff;
+}
+
+ul.email li i {
+  color: #fff;
+  font-size: 19px;
+}
+
+/*--------------------------------------------------------------------- 
+slider
+---------------------------------------------------------------------*/
+
+.carousel-item {
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 800px;
+  min-height: 800px;
+}
+
+.primera-vista {
+  min-height: 800px;
+}
+
+.segunda-vista {
+  min-height: 800px !important;
+}
+
+#agricultor-banner {
+  padding-top: 0px !important;
+}
+
+/** banner_main **/
+
+#top_section {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  position: relative;
+  height: 100vh;
+  background-position: center;
+}
+
+#myCarousel .carousel-indicators {
+  bottom: -50px;
+  margin-left: 11px;
+  right: inherit;
+}
+
+#myCarousel .carousel-indicators .active {
+  background: #0e0b01;
+}
+
+#myCarousel .carousel-indicators li {
+  cursor: pointer;
+  background: #fff;
+  border-radius: 40px;
+  width: 22px;
+  height: 22px;
+}
+
+#myCarousel a.carousel-control-next,
+#myCarousel a.carousel-control-prev {
+  display: none;
+}
+
+.home-banner {
+  padding-bottom: 60px;
+}
+
+.relative {
+  position: inherit;
+  bottom: 0;
+  padding: 0;
+}
+
+.bluid {
+  margin-top: 100px;
+  font-family: "Open Sans", sans-serif;
+  text-align: right;
+  padding-bottom: 150px;
+}
+
+.home-slider {
+  margin-top: 0px;
+  text-align: right;
+  padding-bottom: 300px;
+}
+
+.carousel-cap-provo {
+  left: 8% !important;
+  padding-bottom: 100px;
+}
+
+.carousel-provoletas {
+  padding: 100px;
+}
+
+.provo-carousel-img {
+  max-height: 600px !important;
+  min-height: 600px !important;
+}
+
+.nosotros-slider {
+  padding-bottom: 300px;
+}
+
+.bluid.cotiza {
+  text-align: left;
+}
+
+.bluid-nosotros {
+  margin-top: 50px;
+  font-family: "Open Sans", sans-serif;
+  text-align: right;
+}
+
+.banner_main .bluid-nosotros .bluid-provo h1 {
+  color: #fff;
+  font-size: 90px;
+  line-height: 110px;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+.banner_main .bluid-nosotros .bluid-provo p {
+  color: #fff;
+  line-height: 25px;
+  font-weight: 500;
+  padding-bottom: 50px;
+  font-size: 17px;
+}
+
+.banner_main .bluid-nosotros .bluid-provo .read_more {
+  margin-right: 8px;
+  background: #fff;
+  color: #000;
+}
+
+.banner_main .bluid .read_more:hover {
+  color: #fff;
+  background: #0e0b01;
+}
+
+.banner_main .bluid h1 {
+  color: #fff;
+  font-size: 100px;
+  line-height: 80px;
+  padding-bottom: 25px;
+}
+
+.banner_main .bluid p {
+  color: #fff;
+  line-height: 25px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.banner_main .bluid .read_more {
+  margin-right: 8px;
+  background: #fff;
+  color: #000;
+}
+
+.banner_main .bluid .read_more:hover {
+  color: #fff;
+  background: #0e0b01;
+}
+
+#iconos-varios {
+  padding-top: 100px;
+}
+
+#icono {
+  margin-top: 50px;
+}
+
+/** section-a **/
+
+.section-a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.container-vaca-portfolio {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-nosotros-portfolio {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-nosotros-info h1 {
+  font-size: 60px;
+}
+
+.en-campobasso {
+  font-family: "HOLISPAY" !important;
+  font-size: 26px !important;
+}
+
+.container-nosotros-info p {
+  font-size: 20px;
+}
+
+
+.background-white {
+  background-color: #fff !important;
+}
+
+/** vaca section **/
+
+.container-nosotros-rallado-titulo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.container-positioned {
+  top: 12.5em;
+  left: 31%;
+}
+
+.container-nosotros {
+  top: 200px;
+  width: 100%;
+  padding: 0 50px 50px 50px;
+  margin-top: 30px;
+}
+
+.nuestra-empresa {
+  margin-top: -50px !important;
+}
+
+.vaca-img {
+  width: 100%;
+  max-width: 25em;
+  padding-top: 3.5em;
+  padding-bottom: 6.25em;
+}
+
+.nosotros-img {
+  width: 100%;
+  max-width: 800px;
+}
+
+.container-iconos-varios-index {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+@media (max-width: 1024px) {
+  .container-iconos-varios-index {
+    margin-top: 300px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+#add-nuestros {
+  margin-top: 50px;
+}
+
+.container-vaca-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 55%;
+}
+
+.quesos-rallado-img {
+  max-height: 300px;
+  width: 100%;
+}
+
+.container-nosotros-info {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0px 150px 0px 150px;
+  align-items: center;
+}
+
+.container-portfolio-queso-img {
+  position: relative;
+  background-color: black;
+}
+
+.portfolio_quesos {
+  max-width: 80%;
+  gap: 50px;
+  padding-top: 20px;
+}
+
+.portfolio_img {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-portfolio-queso-img:hover .portfolio_img {
+  opacity: 0.3;
+}
+
+.container-portfolio-queso-img:hover .middle {
+  opacity: 1;
+}
+
+.text-portfolio-queso {
+  color: #000;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.middle h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.middle hr {
+  color: #d9bc81;
+  width: 100px;
+  border: 1px solid #d9bc81;
+}
+
+.middle a p {
+  color: white;
+  font-family: "MONTSERRAT";
+  font-weight: bold;
+}
+
+.middle-queso {
+  color: #d9bc81;
+  /* opacity: 0.5; */
+  font-weight: bold;
+  font-family: "MONTSERRAT";
+}
+
+.descubri_button {
+  display: flex;
+  padding: 3.2em 0em 6em 0em;
+}
+
+.descubri_button a {
+  display: flex;
+  width: 400px;
+  height: 80px;
+  background-color: #000;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cucharas-rallados {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 2.7em;
+  margin-bottom: 4em;
+}
+
+.container-nuestro-canal {
+  display: flex;
+  justify-content: center;
+}
+
+/** end section-a **/
+
+.container-image-description {
+  display: flex;
+}
+
+.container-image-description img {
+  width: 50%;
+  object-fit: cover;
+  max-height: fit-content;
+}
+
+.container-description-nuestros {
+  width: 50%;
+  padding: 50px;
+  background-color: #e0e0e0;
+}
+
+.container-description-nuestros-carousel {
+  width: 50%;
+}
+
+.provo-img-carousel-nuestros {
+  min-height: 900px !important;
+  max-height: 900px !important;
+}
+
+.container-carousel-img-provo {
+  min-height: 900px !important;
+  max-height: 900px !important;
+}
+
+/** section-b **/
+
+.section-b {
+  height: 100vh;
+  background-color: rgb(209, 209, 209) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: #fff;
+}
+
+.cotiza_button {
+  display: flex;
+  padding-top: 30px;
+}
+
+.cotiza_button a {
+  display: flex;
+  background-color: #000;
+  color: white;
+  width: 150px;
+  height: 50px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-portfolio-rallados {
+  background-color: #000;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end section-b */
+
+/* section-c */
+
+.section-c {
+  width: 100%;
+  background-color: #f1f1f1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.8em;
+}
+
+.container-text-queso {
+  display: flex;
+  width: 50%;
+}
+
+.section-c-nosotros {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 8em 3em 5em 3em;
+  align-content: center;
+  align-items: center;
+  background-color: rgb(219, 219, 219);
+}
+
+.container-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+
+.container-title h1 {
+  font-size: 50px;
+  max-width: 50%;
+
+}
+/* .container-title p {
+  font-size: 25px !important;
+} */
+
+.container-info h1 {
+  font-size: 50px;
+}
+/* .container-info p {
+  font-size: 25px !important;
+} */
+
+.container-image-section-c-nosotros {
+  width: 100%;
+}
+
+.container-image-section-c-nosotros img {
+  width: 100%;
+}
+
+.container-last-info h1 {
+  font-size: 50px;
+}
+
+/* .container-last-info p {
+  font-size: 25px !important;
+} */
+.container-sellos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 5em 0em;
+}
+.container-info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding-top: 30px;
+}
+.rallado-text {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.container-last-info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.sellos-nosotros {
+  width: 200px;
+  height: 200px;
+}
+
+.nosotros-image {
+  padding: 50px;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+.rallado-plateado {
+  width: 100%;
+  height: 600px;
+  padding-top: 200px;
+  padding-left: 200px;
+  padding-bottom: 40px;
+}
+
+.bakers {
+  width: 45%;
+}
+
+.positioned-text-rallado {
+  position: absolute;
+  top: 100px;
+  width: 90%;
+}
+
+.rallado-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 50%;
+  padding-left: 100px;
+  gap: 15px;
+}
+
+.container-empleados {
+  display: flex;
+  width: 50%;
+}
+
+.bakers {
+  width: 90%;
+  height: 600px;
+  object-fit: cover;
+  padding: 70px;
+}
+
+.section-c-nuestros {
+  display: flex;
+  background-color: #dddddd;
+  padding: 100px;
+  width: 100%;
+}
+
+.section-c-rallados {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 30px;
+}
+
+.container-gramaje {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.container-text-gramaje {
+  padding: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.text-cursiva {
+  font-family: "JALLIESTHA";
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.comprar-ahora-button {
+  background-color: #fff;
+  padding: 10px 20px;
+  width: 260px;
+}
+
+.comprar-ahora-button a {
+  font-size: 20px;
+  font-family: "MONTSERRAT";
+  font-weight: bold;
+}
+
+.section-campobasso-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  background-color: #000;
+}
+
+.section-campobasso-contacto h1 {
+  font-size: 50px;
+  color: #d9bc81;
+  margin-top: -100px;
+}
+
+.section-campobasso-contacto h2 {
+  font-size: 30px;
+  color: #d9bc81;
+  margin-top: 20px;
+}
+
+.section-campobasso-contacto p {
+  font-size: 20px;
+  color: #fff;
+  font-family: "HOLISPAY";
+}
+
+.container-mini-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding-bottom: 30px;
+  width: 50%;
+}
+
+.container-mini-section img {
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.descargar-button {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.descargar-button a {
+  font-family: "MONTSERRAT";
+  color: #000;
+}
+
+.container-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-campobasso-contacto h3 {
+  font-size: 40px;
+}
+
+.container-data h3 {
+  font-size: 40px;
+}
+
+.section-campobasso-contacto img {
+  width: 100%;
+  height: 500px;
+}
+
+.container-puntos-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-info-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: #cdd1d3;
+  padding: 100px;
+}
+
+.container-info-contacto h1 {
+  font-size: 60px;
+  font-family: "HOLISPAY";
+}
+
+.container-info-contacto h5 {
+  font-size: 26px;
+  font-family: "HOLISPAY";
+}
+
+.container-info-contacto-h5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+/* end section-c */
+
+.container-quiero-contacto {
+  display: flex;
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.mobile-info {
+  text-align: center;
+  font-family: "HOLISPAY"!important;
+  color: #000;
+  font-size: 26px !important;
+  margin-bottom: 40px !important;
+}
+
+.container-last-info p {
+  font-family: "MONTSERRAT" !important;
+  font-size: 20px !important;
+  margin-top: 5px;
+}
+
+.container-info p {
+  font-family: "MONTSERRAT" !important;
+  font-size: 20px !important;
+  margin-top: 5px;
+}
+
+.punto-de-venta-directa p {
+  font-family: "MONTSERRAT" !important;
+  font-size: 17px !important;
+  font-weight: 500;
+}
+
+.venta-fabrica-p {
+  margin-bottom: 30px;
+  font-size: 20px !important;
+  font-weight: 500;
+}
+
+.punto-de-venta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.punto-de-venta p {
+  color: #000;
+  font-family: "MONTSERRAT";
+  font-weight: 500;
+}
+
+.punto-de-venta-directa {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.punto-de-venta-directa h1 {
+  font-family: "HOLISPAY";
+  font-size: 30px;
+  color: #000;
+}
+
+.punto-de-venta-directa p {
+  font-family: "HOLISPAY";
+  font-size: 30px;
+  color: #000;
+}
+
+.container-puntos-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.container-puntos-img img {
+  width: 100%;
+  max-height: 500px;
+}
+
+.container-quiero-text p {
+  font-family: "MONTSERRAT";
+  font-weight: 600;
+  position: relative;
+}
+
+.descargar-button-black {
+  background-color: #000;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.puntos-de-venta-title {
+  margin: 50px 0px 30px 0px;
+}
+.descargar-button-black a {
+  color: #fff;
+  font-family: "MONTSERRAT";
+}
+
+.container-quiero-img {
+  position: absolute;
+  width: 150px;
+}
+
+.container-quiero-text h1 {
+  font-size: 40px;
+}
+
+.container-quiero-input {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.container-text-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+}
+
+.venta-direct-text {
+  font-family: "MONTSERRAT";
+  font-size: 20px !important;
+  font-weight: 500 !important;
+}
+
+.container-mini-section p {
+  font-family: "MONTSERRAT";
+  line-height: 35px;
+}
+
+.text-contact-sub {
+  font-family: "MONTSERRAT" !important;
+  font-size: 20px !important;
+}
+
+.text-contact-sub a {
+  font-family: "MONTSERRAT" !important;
+  font-size: 20px !important;
+  font-weight: 500;
+}
+
+.text-contact-sub a:hover{
+  color: #000;
+  font-weight: 600;
+}
+
+.input-ingresa-aca {
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid black;
+  font-family: "MONTSERRAT";
+  letter-spacing: -0.5px;
+}
+
+.button-contact {
+  background-color: #000;
+  padding: 6px 40px;
+  color: white !important;
+  cursor: pointer;
+  font-family: "MONTSERRAT";
+}
+
+/* section-d */
+
+.section-d {
+  width: 100%;
+  background-color: #d6d7d9;
+  display: flex;
+  align-items: center;
+}
+
+.campobasso-lechero {
+  width: 100%;
+  height: 500px;
+}
+
+.section-d-nosotros {
+  display: flex;
+  padding: 5em 5em 0em 5em;
+  max-height: 800px;
+  justify-content: center;
+}
+
+.container-nosotros-vaquitas {
+  display: flex;
+  max-height: 500px;
+  background-color: #000;
+}
+
+.container-nosotros-vaquitas img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.provo-vista {
+  max-height: 850px !important;
+  min-height: 850px !important;
+}
+
+.container-nosotros-bolsa-rallado {
+  display: flex;
+  background-color: #000;
+  max-height: 600px;
+  min-height: 600px;
+  width: 60%;
+}
+
+#carouselExampleControls {
+  max-height: 800px;
+  width: 100%;
+  min-height: 800px;
+}
+
+#container-carousel {
+  max-height: 600px;
+  width: 100%;
+  min-height: 600px;
+}
+
+#parme {
+  padding-top: 50px;
+}
+
+.container-carousel-img {
+  max-height: 600px;
+  min-height: 600px;
+}
+
+.container-carousel-img img {
+  max-height: 600px;
+  min-height: 600px;
+}
+
+.container-nosotros-bolsa-rallado img {
+  width: 100%;
+
+  object-fit: cover;
+  max-height: 600px;
+  min-height: 600px;
+}
+
+.container-nosotros-vaquitas img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.container-cuidamos {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 80%;
+}
+
+.container-wrapper-cuidamos {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-cuidamos img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  max-height: 800px;
+}
+
+.container-cuidamos-text {
+  background-color: #000;
+  width: 100%;
+  padding: 50px;
+}
+
+.container-lechero-sellos {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.porque-button {
+  display: flex;
+  padding-top: 10px;
+  align-self: right;
+}
+
+.container-text-and-button {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+  padding: 90px;
+}
+
+.porque-button a {
+  display: flex;
+  width: 250px;
+  height: 50px;
+  background-color: #000;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-sellos {
+  display: flex;
+  width: 100%;
+}
+
+.sello {
+  width: 150px;
+  height: 150px;
+}
+
+/* end section-d */
+
+/* section-e */
+
+.container-provoleta-probala {
+  position: relative;
+}
+
+.container-provoleta-probala img {
+  object-fit: cover;
+  max-height: 600px;
+  padding: 100px;
+  width: 100%;
+}
+
+.container-provoleta-text {
+  position: absolute;
+  left: 12%;
+  top: 30%;
+}
+
+.container-provoxl-textmini h1 {
+  line-height: 65px;
+}
+
+.container-mix-text {
+  line-height: 50px;
+}
+
+.container-provoleta-text h1 {
+  font-size: 60px;
+  text-shadow: 0 1px 3px black;
+  padding-bottom: 10px;
+}
+
+.container-provoleta-text h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-shadow: 0px 3px 5px black;
+}
+
+.container-provo-mix {
+  display: flex;
+  width: 100%;
+  padding: 0px 100px 100px 100px;
+  gap: 30px;
+}
+
+.container-mix-fondue {
+  position: relative;
+  width: 50%;
+}
+
+.container-mix-fondue img {
+  object-fit: cover;
+  max-height: 400px;
+  min-height: 400px;
+  width: 100%;
+}
+
+.container-mix-text {
+  position: absolute;
+  left: 12%;
+  top: 15%;
+}
+
+.container-mix-text h1 {
+  font-size: 60px;
+  text-shadow: 0 1px 3px #fff !important;
+}
+
+/* TEXTO HOME BANNER MIX FONUDE - DESCRIPCION */
+.container-mix-text h3 {
+  font-family: "MONTSERRAT" !important;
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 3px 3px 5px #000;
+}
+
+.container-provo-xl {
+  position: relative;
+  width: 50%;
+}
+
+.container-provo-xl img {
+  object-fit: cover;
+  max-height: 400px;
+  min-height: 400px;
+  width: 100%;
+}
+
+.container-provoxl-text {
+  position: absolute;
+  left: 12%;
+  top: 12%;
+}
+
+.container-provoxl-textmini {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-provoxl-textmini h1 {
+  font-size: 80px;
+  text-shadow: 0 3px 5px #fff;
+}
+
+.container-almacen {
+  width: 100%;
+  display: flex;
+  padding: 0px 100px 50px 100px;
+  max-height: 400px;
+  position: relative;
+}
+
+.container-almacen img {
+  max-height: 600px;
+  object-fit: cover;
+  width: 50%;
+}
+
+.container-almacen-text {
+  width: 50%;
+  background-color: #f1f1f1;
+  padding: 40px;
+}
+
+.container-almacen-text h1 {
+  font-size: 50px;
+}
+
+.container-almacen-text h3 {
+  font-size: 20px;
+}
+
+.veni-button {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+}
+
+.container-iconos-varios {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.container-icon-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.medios-paga {
+  padding-top: 20px;
+}
+.medios-p {
+  margin: 0px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+@media (max-width: 1270px) {
+  .medios-p {
+    font-size: 8px;
+  }
+}
+
+.container-icon-card img {
+  max-width: 130px;
+}
+
+.container-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-card-text h1 {
+  font-size: 50px;
+}
+
+.footer-divider {
+  padding-right: 100px;
+  border-right: 3px solid black;
+  height: 70px;
+}
+
+.container-card-text p {
+  color: #000;
+  font-weight: bold;
+  font-family: "MONTSERRAT";
+}
+
+.bluid-provo {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  padding-bottom: 150px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: start;
+}
+.padding {
+  padding: 100px;
+}
+
+.provoleta {
+  max-height: 600px;
+}
+
+.section-e {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  align-items: left;
+}
+
+.cotiza_button a {
+  display: flex;
+  width: 300px;
+  height: 60px;
+  background-color: #000;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/** contact section **/
+
+.contact {
+  background: #fefeff;
+  padding: 90px 0;
+}
+
+.contact .titlepage::before {
+  right: inherit;
+  border: #2e2f34 solid 5px;
+  left: 15px;
+}
+
+.container-form-and-title {
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_form {
+  max-width: 600px;
+}
+
+.main_form .contactus {
+  border: #000000 solid 1px;
+  padding: 0 15px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 71px;
+  background: #fff;
+  color: #000000 !important;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.main_form .textarea {
+  border: #000000 solid 1px;
+  margin-bottom: 25px;
+  width: 100%;
+  background: #fff;
+  color: #000000 !important;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0px 0px 0 15px;
+  font-family: "MONTSERRAT";
+  font-size: 16px;
+  font-weight: normal;
+  border-radius: 0;
+  height: 150px;
+}
+
+.main_form .send_btn {
+  font-size: 17px;
+  transition: ease-in all 0.5s;
+  background-color: #323232;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 25px 0px;
+  max-width: 252px;
+  width: 100%;
+  display: block;
+  margin-top: 10px !important;
+  font-weight: bold;
+}
+
+.main_form .send_btn:hover {
+  background-color: #464646c7;
+  transition: ease-in all 0.5s;
+  color: #fff;
+}
+
+#request *::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.contacto-form h2 {
+  font-size: 60px;
+}
+
+.contacto-form p {
+  font-size: 22px !important;
+  font-family: "HOLISPAY";
+  color: #000;
+}
+
+.contactus {
+  font-family: "MONTSERRAT";
+  color: #000 !important;
+  border: 1px solid black;
+}
+
+.send_btn {
+  background-color: #000 !important;
+  font-family: "MONTSERRAT";
+}
+
+/** end contact section **/
+
+/** footer **/
+
+footer {
+  width: 100%;
+}
+.footer {
+  background: #000;
+  padding-top: 90px;
+}
+
+@media (max-width: 500px) {
+  .mobile-nopadding {
+    padding: 0 !important;
+  }
+}
+
+.newslatter_form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.ente {
+  color: #000;
+  border: inherit;
+  padding: 0 30px;
+  height: 66px;
+  width: 100%;
+  font-size: 17px;
+}
+
+.adress-footer-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.subs_btn {
+  max-width: 289px;
+  display: inline-block;
+  background: #151515;
+  height: 66px;
+  width: 100%;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: ease-in all 0.5s;
+}
+
+.subs_btn:hover {
+  background: #fff;
+  color: #151515;
+  transition: ease-in all 0.5s;
+}
+
+.container-footer-icons {
+  display: flex;
+}
+
+.footer-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.Informa h3 {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 21px;
+  margin-bottom: 15px;
+  margin-top: 26px;
+  text-transform: uppercase;
+}
+
+.Informa li {
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+}
+
+.Informa li a:hover {
+  color: #bdbdbe;
+}
+
+.helpful ul li a {
+  color: #d9bc81;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.helpful ul li a:hover {
+  color: #bdbdbe;
+}
+
+ul.social_icon {
+  float: right;
+}
+
+ul.social_icon li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+ul.social_icon li:last-child {
+  padding-right: 0;
+}
+
+ul.social-ul {
+  gap: 30px;
+}
+
+ul.social_icon li a {
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 33px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+ul.social_icon li a:hover {
+  color: #bdbdbe;
+  transform: rotate(360deg);
+  transition: ease-in all 0.7s;
+}
+
+.conta ul li a {
+  color: #ffffff;
+}
+
+.conta ul li a i {
+  padding-right: 5px;
+}
+
+.copyright {
+  background: #151515;
+  margin-top: 80px;
+  padding: 20px 0px;
+}
+
+.copyright p {
+  font-family:'MONTSERRAT';
+  color: #828282;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.firma1828 p {
+  font-family:'MONTSERRAT';
+  color: #404040;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.firma1828 p a {
+  font-family:'MONTSERRAT';
+  color: #4c4c4c;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.copyright a {
+  color: #bdbdbe;
+}
+
+.copyright a:hover {
+  color: #fff;
+}
+
+.links-container {
+  gap: 120px;
+}
+
+/** end footer **/
+
+/** Whatsapp floating **/
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float:hover {
+  color: #000;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+/*- - ener page css--*/
+
+.inner_page .header {
+  box-shadow: 0 -3px 20px 0px #717171;
+  position: inherit;
+}
+
+.inner_page .about {
+  margin: 90px 0;
+}
